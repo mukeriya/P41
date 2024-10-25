@@ -33,3 +33,18 @@ if age > 18:
 elif height < 120:
     print('Ne mozhesh pitu na horgu')
 ```
+
+```python
+time = int(input("Enter your time: "))
+
+if time >= 24 or time < 0:
+    print('Invalid time')
+elif time < 6:
+    print("Good night!")
+elif time < 13:
+    print("Good morning!")
+elif time < 17:
+    print("Good day!")
+else:
+    print("Good evening!")
+```

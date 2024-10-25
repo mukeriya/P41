@@ -22,4 +22,15 @@ elif user_choice == '3':
 else:
     print('Invalid choice')
 
-10 -> bit -> bit / download_speed = amount_of_seconds_to_download / 3600
+time = int(input("Enter your time: "))
+
+if time >= 24 or time < 0:
+    print('Invalid time')
+elif time < 6:
+    print("Good night!")
+elif time < 13:
+    print("Good morning!")
+elif time < 17:
+    print("Good day!")
+else:
+    print("Good evening!")
