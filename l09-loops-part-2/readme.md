@@ -1,6 +1,7 @@
 # Loops Part 2
 
 ---
+## ```break```
 ```break``` - конструкція для дострокового завершення циклу. При виклику ```break``` цикл одразу завершиться
 
 ```python
@@ -17,6 +18,7 @@ print('End')
 
 ![image](./imgs/diagram1.png)
 ---
+## ```continue```
 ```continue``` - конструкція для пропуска ітерації. При її виклику ми пропускаємо увесь наступний код після ```continue``` та повертаємось на почток циклу
 ```python
 lower_bound = 0
@@ -61,7 +63,8 @@ print(iteration_count)
 print(math.ceil(math.sqrt(x)))
 ```
 ---
-```else```
+## ```else```
+```else``` - Блок ```else``` виконується тільки в тому випадку, якщо цикл не завершився достроково
 ```python
 number = 1
 
@@ -107,4 +110,21 @@ for row in range(10):
     print()
 
 print(i)
+```
+
+## Validation example
+
+```python
+number = None
+
+while True:
+
+    user_input = input('Enter number: ')
+    if user_input.isdigit():
+        number = int(user_input)
+        break
+
+    print('Invalid value')
+
+print(number)
 ```

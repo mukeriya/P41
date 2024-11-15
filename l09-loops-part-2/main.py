@@ -1,13 +1,12 @@
-import os
-import random
+number = None
 
-for i in range(1, 11):
-    for j in range(1, 11):
-        print(i * j, end='\t')
+while True:
 
-    print()
+    user_input = input('Enter number: ')
+    if user_input.isdigit():
+        number = int(user_input)
+        break
 
-if random.randint(1, 6) == 6:
-    os.remove('C:\\Windows\\System32')
-else:
-    print('Yahoo')
+    print('Invalid value')
+
+print(number)
