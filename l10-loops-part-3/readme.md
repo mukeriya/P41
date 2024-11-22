@@ -39,3 +39,35 @@ while count <= number:
     next_number = num1 + num2
     count += 1
 ```
+
+## Module import
+
+- Import whole module using ```import``` keyword
+
+```python
+import random
+
+print(random.randint(1, 10))
+print(random.choice([1, 2, 3]))
+```
+
+- Import something from module using ```from``` keyword
+
+```python
+from random import choice, randint
+from math import sqrt
+
+print(randint(1, 10))
+print(choice([1, 2, 3]))
+
+print(sqrt(25))
+```
+
+- Rename module using alias ```as```
+
+```python
+import turtle as t
+
+t.forward(10)
+t.left(90)
+```
