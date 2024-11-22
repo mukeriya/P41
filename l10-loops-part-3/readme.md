@@ -42,6 +42,10 @@ while count <= number:
 
 ## Module import
 
+[About modules](https://www.geeksforgeeks.org/python-modules/)
+
+---
+
 - Import whole module using ```import``` keyword
 
 ```python
@@ -50,6 +54,8 @@ import random
 print(random.randint(1, 10))
 print(random.choice([1, 2, 3]))
 ```
+
+---
 
 - Import something from module using ```from``` keyword
 
@@ -63,6 +69,8 @@ print(choice([1, 2, 3]))
 print(sqrt(25))
 ```
 
+---
+
 - Rename module using alias ```as```
 
 ```python
@@ -71,3 +79,20 @@ import turtle as t
 t.forward(10)
 t.left(90)
 ```
+
+---
+
+- Import all from module using ```*```
+
+> Not recommended!
+
+```python
+from random import *
+from math import *
+
+print(randint(1, 10))  # From random
+print(choice([1, 2, 3]))  # From random
+
+print(sqrt(25))  # From math
+```
+
