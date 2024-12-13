@@ -218,3 +218,38 @@ print('\"')
 print('\\')
 print(r'\asda \n')
 ```
+
+# Additional tasks
+> Підрахунок голосних у строці
+
+
+Напишіть програму,яка рахує кількість голосних літер у строці
+
+```bash
+Enter: Hello world!
+Result: 3
+```
+---
+> Анаграма
+
+Напишіть програму, яка перевіряє, чи є дві строка анаграмами (містять однакові символи у різному порядку)
+
+```bash
+Enter first word: listen
+Enter second word: silte
+Result: True
+
+Enter first word: cat
+Enter second word: dog
+Result: False
+```
+---
+> Підрахунок кількості слів
+
+Напишіть програму, яка рахує кількість слів у строці
+
+```bash
+Enter: Hello world!
+Result: 2
+```
+
