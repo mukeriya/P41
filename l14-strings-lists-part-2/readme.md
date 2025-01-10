@@ -486,3 +486,8 @@ print(digits)
 > :warning:  Do not copy list using ```=```
 > 
 > It will just copy reference to list. Not values
+
+
+- Regexp
+- PyQT, Tkinter
+- 
