@@ -1,10 +1,8 @@
-def factorial(x: int) -> int:
-    result = 1
-    for i in range(2, x + 1):
-        result *= i
+def user_info(name , age , **info):
+    print("Name:" , name)
+    print("Age: " , age)
+    for key , value in info.items():
+        print(key + ":" , value)
 
-    return result
-
-
-def map_to_factorial(elements: list[int]) -> list[int]:
-    return [factorial(el) for el in elements]
+user = {"name":"John" , "age": 30 , "city":"New York" , "lang":"en"}
+user_info(**user)
