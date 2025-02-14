@@ -1,0 +1,16 @@
+.tag {
+  color: red;
+}
+
+.card {
+  background-color: lightgray;
+  padding: 2px;
+}
+
+.card-red {
+  color: red;
+}
+
+.card-black {
+  color: black;
+}
