@@ -1,0 +1,76 @@
+/* button {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+ */
+/* 
+.btn {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-big {
+  font-size: 20px;
+  color: red;
+}
+ */
+
+button {
+  color: red;
+  background-color: aqua;
+}
+
+button:hover {
+  color: yellow;
+}
+
+.button {
+  color: green;
+}
+
+#button {
+  color: blue;
+}
+
+/*tag -> class -> id*/
+p::first-letter {
+  color: red;
+  font-size: 20px;
+}
+/* 
+[type="text"] {
+  background-color: red;
+} */
+
+[data-enabled] {
+  background-color: red;
+}
+
+p:first-child {
+  background-color: aqua;
+}
+
+p:first-of-type {
+  background-color: red;
+}
+
+li:nth-child(3n) {
+  color: red;
+}
+
+p::before {
+  content: "Hello";
+  background-color: blue;
+}
+
+p::after {
+  content: "Bye";
+}
