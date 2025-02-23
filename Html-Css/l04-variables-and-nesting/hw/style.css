@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+ol {
+  background-color: red;
+  color: white;
+  list-style-position: inside;
+  padding: 0.8em;
+}
+
+li {
+  background-color: orange;
+  margin: 0.4em 0;
+}
+
+li > span {
+  display: inline-block;
+  background-color: brown;
+  padding: 0.4em 0.8em;
+}
+
+li::marker {
+  display: inline-block;
+}
+
+.card {
+  display: inline-block;
+  border: 2px solid lightgray;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.2em;
+  border-radius: 1.6em;
+  margin: 1em;
+}

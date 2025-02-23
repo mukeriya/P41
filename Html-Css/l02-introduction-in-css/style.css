@@ -74,3 +74,23 @@ p::before {
 p::after {
   content: "Bye";
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+li.checked {
+  text-decoration: line-through;
+  list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCa8ZkGRqS3ioaz5DIycdBY9yexAWF4vP6A&s");
+}
+
+li.checked::after {
+  content: "";
+  width: 1000px;
+  height: 1000 px;
+  background-image: url("https://oncoqr.com/wp-content/uploads/2017/08/cropped-icon-16x16.jpg");
+}
