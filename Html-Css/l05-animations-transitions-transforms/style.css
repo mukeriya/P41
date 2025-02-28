@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  transition: font-size 0.2s ease, background-color 0.2s ease, all 0.2s linear;
+}
+
+.btn:hover {
+  background-color: crimson;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 200px;
+  overflow: hidden;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  border-bottom: red 2px solid;
+  border-top: blue 2px solid;
+  border-right: black 2px solid;
+  border-left: green 2px solid;
+  /*   scale: 1.4; */
+  /* animation: rotate-animation 5s linear alternate infinite; */
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /*  animation-direction: alternate-reverse; */
+  /* animation-fill-mode: both; */
+}
+
+.block:hover {
+  animation-play-state: paused;
+
+  /* rotate: 360deg; */
+  /* transform: translateY(50px); */
+  /* transform: scale(5); */
+  /* transform: scaleY(1.25); */
+  /* transform: skewY(30deg); */
+  /* transform: matrix(scaleX, skewX, skewY, scaleY, translateX, translateY); */
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: translateX(calc(-50vw - 50px));
+  }
+
+  to {
+    transform: translateX(calc(50vw + 50px));
+  }
+}
+
+@keyframes loader {
+  0%,
+  100% {
+    transform: translate(-100px, -100px);
+  }
+
+  25% {
+    transform: translate(100px, -100px);
+  }
+
+  50% {
+    transform: translate(100px, 100px);
+  }
+
+  75% {
+    transform: translate(-100px, 100px);
+  }
+}
