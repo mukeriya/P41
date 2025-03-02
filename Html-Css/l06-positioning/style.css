@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  border: 2px solid lightgray;
+  padding: 0.8em;
+  margin-bottom: 0.4em;
+  transition: all 0.2s ease;
+}
+
+.card:nth-child(2) {
+  background-color: rgba(0, 255, 0, 0.3);
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.card:nth-child(4) {
+  background-color: rgb(167, 22, 22);
+  position: absolute;
+  top: 1em;
+}
+
+/* .card:nth-child(1) {
+  background-color: rgba(0, 0, 255, 0.2);
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+ */
+
+.sticky {
+  position: sticky;
+  background-color: rgba(0, 0, 255, 0.2);
+  bottom: 1em;
+}

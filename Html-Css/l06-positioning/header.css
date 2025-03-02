@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  position: sticky;
+  top: 0;
+  color: white;
+}
+
+section:nth-child(even) h2 {
+  background-color: brown;
+}
+
+section:nth-child(odd) h2 {
+  background-color: purple;
+}
+
+.top-header {
+  z-index: 2;
+}
+
+header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  background-color: green;
+  z-index: 3;
+}

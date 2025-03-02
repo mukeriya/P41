@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  border: 2px solid lightgray;
+  padding: 0.8em;
+  margin-bottom: 0.4em;
+  transition: all 0.2s ease;
+}
+
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  backdrop-filter: blur(2px);
+}
+
+.modal__content {
+  background-color: white; /* 
+  width: clamp(200px, 50vw, 500px); */
+  min-width: 200px;
+  max-width: 500px;
+  width: 50vw;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.modal__close-button {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.modal__close-button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+  scale: 1.2;
+}
+
+.modal__icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  right: 50%;
+  translate: 50% 0;
+}
+
+h1 {
+  position: absolute;
+  z-index: 10;
+  background-color: brown;
+  color: white;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
