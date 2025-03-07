@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid red;
+  width: clamp(200px, 40%, 40em);
+}
+
+.static-height {
+  height: 200px;
+  overflow: hidden;
+}
+
+.auto-height {
+  height: auto;
+  overflow: hidden;
+  transition: 0.2s all ease;
+}
+
+.container {
+  width: 1000px;
+}
+
+.block {
+  display: inline-block;
+  border: 2px solid red;
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+
+  /*  margin: 20px; */
+}
+
+p::first-line {
+  color: red;
+}

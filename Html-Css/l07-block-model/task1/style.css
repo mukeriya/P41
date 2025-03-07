@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: grey;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 4em;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  background-color: wheat;
+  border-radius: 0.6em;
+  padding: 1em 1em 2em 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+  & > .card__title {
+    text-align: center;
+    color: wheat;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 0.6em 0;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -1px 1px rgb(255, 255, 255);
+  }
+
+  & > .card__description {
+    max-height: 7lh;
+    overflow: hidden;
+  }
+
+  &::before {
+    --width: 30%;
+    --height: 1.5em;
+    border-radius: 0.4em 0.4em 0 0;
+    content: "";
+    position: absolute;
+    left: calc(50% - var(--width) / 2);
+    top: calc(var(--height) / 1.4 * -1);
+    width: var(--width);
+    height: var(--height);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &:nth-child(2) {
+    margin: 0 1em;
+  }
+}
