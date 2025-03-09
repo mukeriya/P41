@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* table {
+  border: 1px double black;
+  border-style: dashed;
+  border-collapse: collapse;
+  border-spacing: 2em;
+  background-color: brown;
+  empty-cells: hide;
+}
+ */
+/* tr {
+  background-color: blueviolet;
+} */
+
+/* th {
+  border: 1px solid red;
+  background-color: red;
+}
+
+td {
+  border: 1px solid blue;
+  background-color: blue;
+}
+
+#uniq {
+  height: 20vh;
+  width: 30vw;
+  vertical-align: baseline;
+  text-align: right;
+  background-color: white;
+} */
+
+/* #another {
+  width: 40vw;
+}
+ */
+
+/* .block {
+  font-size: 18px;
+  width: 10em;
+  height: 10em;
+  border: 1px solid red;
+}
+ */
+
+/* table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  width: 4em;
+  height: 4em;
+  vertical-align: middle;
+  text-align: center;
+}
+ */
+
+caption {
+  text-align: right;
+  caption-side: bottom;
+}
+
+/* tr > :is(td, th):nth-child(2) {
+  background-color: red;
+}
+ */
+
+.col-1 {
+  background-color: red;
+}
+
+.col-2 {
+  background-color: orange;
+}
+
+.col-3 {
+  background-color: yellow;
+}
+
+thead {
+  color: purple;
+}
+
+tfoot {
+  color: green;
+}

@@ -30,7 +30,7 @@ main {
 
 .block {
   width: 100px;
-  height: 100px;
+  aspect-ratio: 1;
   border-bottom: red 2px solid;
   border-top: blue 2px solid;
   border-right: black 2px solid;

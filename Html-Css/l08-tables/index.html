@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- Table row -->
+        <th>
+          <!-- Table head cell -->
+          Col 1
+        </th>
+        <th>Col 2</th>
+        <th>Col 3</th>
+      </tr>
+      <tr>
+        <td>
+          <!-- Table Data -->
+          Col 1
+        </td>
+        <td id="uniq">Col 2</td>
+        <td>Col 3</td>
+      </tr>
+      <tr>
+        <td>Col 1</td>
+        <td id="another">Col 2</td>
+        <td>Col 3</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Col 2</td>
+        <td></td>
+      </tr>
+    </table>
+    <!--  <div class="block"></div> -->
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <table>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <!-- <td>3</td> -->
+        <td>4</td>
+      </tr>
+      <tr>
+        <td rowspan="2">5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <!--         <td>9</td> -->
+        <td colspan="2" rowspan="2">10</td>
+        <!-- <td>11</td> -->
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <!--         <td>14</td>
+        <td>15</td> -->
+        <td>16</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <table>
+      <caption>
+        Title
+      </caption>
+      <colgroup>
+        <col class="col-1" span="2" />
+        <col class="col-2" span="4" />
+        <col class="col-3" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+        </tr>
+        <tr>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+          <th>cell</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+          <td>cell</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
