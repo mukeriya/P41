@@ -1,0 +1,89 @@
+.block {
+  width: clamp(20em, 60vw, 1000px);
+  border: 2px solid red;
+  height: 100px;
+  margin: 0 auto;
+  container-type: size;
+  container-name: block-container;
+}
+
+@container block-container (min-width: 500px) {
+  .block {
+    background-color: red;
+  }
+}
+
+.block:hover {
+  background-color: red;
+}
+
+/*
+all
+*/ /* 
+
+@media (width < 500px) {
+  .block {
+    border-color: blue;
+  }
+} */
+
+/*
+screen
+*/
+/* 
+@media screen and (width < 500px) {
+  .block {
+    border-color: blue;
+  }
+}
+
+@media not print {
+  .block {
+    border-color: blue;
+  }
+}
+
+@media screen and (width < 400px) {
+  .block {
+    border-color: red;
+  }
+} */
+
+/*
+speech
+*/
+/* 
+@media speech and (width < 500px) {
+  .block {
+    border-color: blue;
+  }
+}
+ */
+/*
+print
+*/
+
+button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 1em;
+  padding: 0.8em 1.2em;
+}
+
+@media (hover) {
+  button:hover {
+    background-color: gray;
+  }
+}
+
+@media (hover: none) {
+  button:active {
+    background-color: gray;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  button {
+    background-color: red;
+  }
+}
