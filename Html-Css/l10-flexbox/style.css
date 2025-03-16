@@ -1,0 +1,122 @@
+.container div {
+  padding: 1em;
+}
+
+.container > div:nth-child(1n) {
+  background-color: aqua;
+}
+
+.container > div:nth-child(2) {
+  background-color: brown;
+  align-self: center;
+}
+
+.container > div:nth-child(3n) {
+  background-color: blueviolet;
+}
+
+.container > div:nth-child(4n) {
+  /*   display: flex; */
+  background-color: cadetblue;
+  /*   height: 100px;
+  align-items: end; */
+}
+
+.container {
+  height: 60vh;
+  padding: 0.5em;
+  border: 1px solid gray;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: end;
+}
+
+.flex {
+  display: flex;
+  background-color: aqua;
+}
+
+.inline-flex {
+  display: inline-flex;
+  background-color: red;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  /* flex-flow: column nowrap; */
+  align-content: start;
+}
+
+/*
+
+Flex container properties:
+display: flex | inline-flex
+flex - блоковий елемент
+inline-flex - інлайновий елемент
+
+flex-direction: row column row-revers column-reverse
+
+flex-direction - визначає напрямок головної осі
+
+justify-content: flex-start flex-end center space-around space-between space-evenly
+Визначає позиціонування по головній осі (main axis)
+
+align-items 
+Визначає позиціонування по побічній осі (cross axis)
+
+align-content 
+Визначає позиціонування по побічній осі в багаторядковому режимі
+
+flex-wrap: nowrap wrap wrap-reverse;
+Визначає чи буде перенос на новий рядок.
+
+
+Flex element properties:
+flex-grow - фактор розтягування flex-елемента при наявності надмірного простору в контейнері.
+
+flex-shrink - фактоор зменшення flex-елемента
+
+flex: flex-grow flex-shrink flex-basis;
+
+flex: 2; - flex-grow
+
+flex: 250px; - flex-basis
+
+flex: 1 30px; flex-grow flex-basis
+
+flex: 2 2; flex-grow flex-shrink
+
+flex: 2 1 25%; flex-grow flex-shrink flex-basis
+
+order - визначає порядок елемента.
+
+align-self: stretch flex-start flex-end center baseline
+*/
+
+.card-container {
+  display: flex;
+}
+.card-container div {
+  width: 300px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.card-container div:nth-child(4) {
+  flex-shrink: 2;
+}
+.card-container div:nth-child(2) {
+  flex-shrink: 0;
+  flex-grow: 1;
+  /*   order: 1; */
+}
+/* .card-container div:nth-child(1) {
+  order: 3;
+}
+.card-container div:nth-child(3) {
+  order: 2;
+} */
+
+/* .big {
+  flex-basis: 30%;
+} */
