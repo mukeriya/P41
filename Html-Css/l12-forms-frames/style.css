@@ -1,0 +1,25 @@
+input {
+  accent-color: purple;
+}
+
+label:has(input[type="checkbox"]) {
+  background-color: aqua;
+}
+
+label:has(input[type="checkbox"]:checked) {
+  background-color: red;
+}
+
+label:has(input[type="checkbox"]:checked) ~ p {
+  display: block;
+}
+
+label ~ p {
+  display: none;
+}
+
+input[type="email"]::placeholder {
+  color: red;
+  text-align: center;
+  line-height: 1.2em;
+}
